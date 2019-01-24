@@ -1,0 +1,388 @@
+* {
+    font-family: "Helvetica", sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-color: white;
+}
+header {
+    justify-content: space-between;
+    z-index: 2;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+}
+header nav {
+    margin-top: -50px;
+    margin-left: 180px;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+header img {
+    height: 70px;
+    z-index: 3;
+}
+header nav a {
+    transition: color 0.3s;
+    font-size: 25px;
+    z-index: 3;
+    color: #666666;
+    margin-left: 50px;
+    padding-bottom: 14px;
+    text-shadow: black 0 0 3px;
+}
+header nav a:hover {
+    color: #FFD700;
+    border-bottom: solid #FFD700 3px;
+}
+#active {
+    border-bottom: solid 3px #FFD700;
+}
+main section div {
+    color: white;
+    text-align: center;
+}
+main section div div h1 {
+    text-shadow: black 0 0 3px;
+    z-index: 1;
+    font-size: 50px;
+}
+main section div div p {
+    text-shadow: black 0 0 3px;
+    z-index: 1;
+    font-size: 20px;
+}
+.videobakgrunn {
+    position: relative;
+    border-bottom: solid 3px #FFD700;
+    top: 0;
+    z-index: -2;
+}
+
+.videobakgrunn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#overlay1 {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#overlay1 div h1 {
+    margin-bottom: 20px;
+}
+#overlay1 div p {
+    margin-top: 20px;
+}
+#overlay {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.3s;
+    display: flex;
+}
+#overlay:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+#overlay:hover .artikkeloverskrift {
+    display: none;
+}
+.seksjon {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+.seksjon a {
+    width: 100%;
+    height: 100%;
+}
+.seksjon a div img {
+    padding-left: 20px;
+    width: 100%;
+    float: left;
+}
+.artikkel {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+.artikkel a {
+    width: 100%;
+}
+.artikkel {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#artikkel2 {
+    border-bottom: solid 3px #666666;
+    padding-bottom: 20px;
+}
+#artikkel3 {
+    padding-top: 30px;
+}
+.artikkel div {
+    width: 50%;
+}
+.artikkel div p {
+    padding-left: 25px;
+    padding-right: 5px;
+    text-shadow: none;
+    color: black;
+}
+.artikkeloverskrift {
+    margin-top: 250px;
+    color: white;
+    text-shadow: black 0 0 3px;
+    font-size: 40px;
+}
+#overlay div {
+    width: 100%;
+    transition: 0.5s;
+    margin-right: 30%;
+}
+.hoveroverskrift {
+    transition: 0.5s;
+    display: none;
+    padding-bottom: 20px;
+}
+#overlay:hover .hoveroverskrift {
+    display: block;
+}
+#underline {
+    background-color: white;
+    transition: 0.5s;
+    color: transparent;
+    border-bottom: solid 3px #FFD700;
+    width: 200px;
+    margin: 40px auto 40px;
+    height: 0;
+    text-shadow: none;
+}
+#underline1 {
+    background-color: white;
+    transition: 0.5s;
+    color: transparent;
+    border-bottom: solid 3px #FFD700;
+    width: 200px;
+    margin: 40px auto 40px;
+    height: 0;
+    text-shadow: none;
+}
+.underline {
+    transition: 0.5s;
+    display: none;
+    color: transparent;
+    border-bottom: solid 3px #FFD700;
+    width: 200px;
+    margin: auto;
+    height: 0;
+    text-shadow: none;
+}
+#overlay:hover .underline {
+    display: block;
+}
+.hoverbeskrivelse {
+    transition: 0.5s;
+    display: none;
+    padding-top: 20px;
+}
+#overlay:hover .hoverbeskrivelse {
+    display: block;
+}
+footer {
+    background-color: #333333;
+    padding-top: 30px;
+    height: 50px;
+}
+footer section {
+    column-count: 4;
+}
+footer section a{
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+    color: #666666;
+}
+footer section a:hover {
+    color: #FFD700;
+}
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #666666;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #FFD700;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#menymobil {
+    display: none;
+    text-shadow: black 0 0 3px;;
+    position: absolute;
+    color: #666666;
+    top: 3px;
+    right: 10px;
+}
+#snapchat {
+    display: none;
+    margin-left: 50%;
+}
+#instagram {
+    display: none;
+    margin-left: 50%;
+}
+#facebook {
+    display: none;
+    margin-left: 50%;
+}
+#youtube {
+    display: none;
+    margin-left: 50%;
+}
+@media (max-width: 700px) {
+    #menymobil {
+        display: block;
+    }
+    header {
+        height: 50px;
+    }
+    header img {
+        height: 50px;
+    }
+    header nav a {
+        display: none;
+    }
+    main section div div h1 {
+        font-size: 25px;
+    }
+    main section div div p {
+        font-size: 10px;
+    }
+    #overlay1 div h1 {
+        margin-bottom: 10px;
+    }
+    #overlay1 div p {
+        margin-top: 0;
+    }
+    #underline1 {
+        width: 100px;
+        margin: 10px auto 10px;
+    }
+    .seksjon a div img {
+        padding-left: 0;
+    }
+    .artikkel {
+        flex-direction: column;
+    }
+    .artikkel div {
+        width: 100%;
+    }
+    .artikkel div p {
+        font-size: 15px;
+        padding: 10px;
+    }
+    #artikkel1 div p {
+        padding-top: 20px;
+    }
+    #artikkel2 div p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .hoveroverskrift {
+        font-size: 50px;
+    }
+    .underline {
+        width: 100px;
+    }
+    .hoverbeskrivelse {
+        font-size: 20px;
+    }
+    footer {
+        padding-top: 0;
+        margin-top: 0;
+        height: 170px;
+        width: 100%;
+    }
+    footer section {
+        column-count: 2;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    footer section a {
+        font-size: 13px;
+        text-align: left;
+        padding-left: 30px;
+    }
+    #snapchat {
+        display: block;
+    }
+    #instagram {
+        display: block;
+    }
+    #facebook {
+        display: block;
+    }
+    #youtube {
+        display: block;
+    }
+}
